@@ -199,7 +199,15 @@ margin: 10px 0;
 .contact h2{
   color: #fce138;
 }
-.contact-info iframe{ /*use caution: this is okay bc there is only 1 iframe in the project*/
+.contact-info iframe{ /*GLOBAL use caution: this is okay bc there is only 1 iframe in the project*/
   width: 400px;
   height: 400px;
+}
+.contact-info div{
+display: inline-block;
+width: 410px;
+vertical-align: top; /*allows cintact info to be displayed from top left*/
+text-align: left;
+margin: 30px 0 0 60px;
+color: white;
 }
