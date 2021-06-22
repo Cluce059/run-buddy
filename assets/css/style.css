@@ -32,27 +32,39 @@ header nav{
   display: flex;
   margin: 7px 0px;
 }
-header nav ul li{
-  display: inline; /*moves header text to the left instead of centered*/
+header nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
 }
-header nav ul li a{
+/*header nav ul li a{ removed for flex display
   margin: 0px 30px;
   font-weight: lighter;
   font-size: 22px;
+}*/
+header nav ul li a {
+  margin: 0 30px;
+  font-weight: lighter;
+  font-size: 1.55vw;
 }
 footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between ;
   background: #fce138;
   width: 100%;
   padding: 40px 35px;
 }
 footer h2{
-  display: inline;
+  /*display: inline; removed for flexbox*/
   color: #024e76;
   font-size: 30 px;
   margin: 0;
 }
 footer div{
-  float: right;
+  /*float: right;*/
   line-height: 1.5;
   text-align: right;
 }
@@ -67,19 +79,24 @@ section{
   background-image: url("../images/hero-bg.jpg");
   background-size: cover; /*aligns image to focus on shoe-tying*/
   background-position: center;
-  height: 600px;
-  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*height: 600px;
+  position: relative; removed for flex*/
 }
 /*form style*/
 .hero-form{
   border: solid 3px #024e76;
   background-color: #fce138;
   padding: 20px;
-  width: 500 px;
   color: #024e76;
+  width: 40%;
+  margin: 3.5%;
+  /*width: 500 px;
   position: absolute;
   bottom: 120px;
-  right: 140px;
+  right: 140px; removed for flexbox*/
 }
 .hero-form h3 {
   margin: 0;
@@ -106,6 +123,19 @@ background-color: #024e76;
 border: none;
 padding: 10px 20px;
 font-size: 16px;
+}
+.hero-cta{
+  width: 35%;
+  text-align: right;
+  margin: 3.5%;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.3;
+}
+.hero-cta h2{
+  font-style: italic;
+  font-size: 55px;
+  color: #fce138;
 }
 .intro{
   text-align: center;
