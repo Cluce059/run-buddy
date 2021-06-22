@@ -164,11 +164,37 @@ font-size: 16px;
 .secondary-border{
   border-color: #39a6b2;
 }
-
-.steps h3{
+.step{
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; /*centers step text with step img*/
+  justify-content: space-between;
+}
+.step h3{
   color: #024e76;
   font-size: 46px;
   margin-top: 10px;
+  flex: 1 30%;
+}
+.step-img{
+  flex: 1 12%;
+  margin-right: 20px;
+}
+.step-text{
+  flex: 12;
+}
+.step-img img{
+  max-width: 100%; /*only rlly need to do this for edge*/
+}
+.step-info{
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .steps p{
   color: #39a6b2;
@@ -247,4 +273,9 @@ color: white;
 }
 .flex-row{
 display: flex;
+}
+.step-tex h4{
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
 }
