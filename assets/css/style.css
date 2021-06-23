@@ -45,7 +45,7 @@ header nav ul {
   font-size: 22px;
 }*/
 header nav ul li a {
-  margin: 0 30px;
+  padding: 10px 15px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
@@ -82,6 +82,7 @@ section{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-start;
   /*height: 600px;
   position: relative; removed for flex*/
 }
@@ -130,7 +131,7 @@ font-size: 16px;
   margin: 3.5%;
   color: #fff;
   font-size: 18px;
-  line-height: 1.3;
+  line-height: 1.2;
 }
 .hero-cta h2{
   font-style: italic;
@@ -154,7 +155,7 @@ font-size: 16px;
     text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
-    font-size: 55px;
+    font-size: 48px; /*48px is usually good to read on any screen*/
     color: #024e76;
     border-bottom: 3px solid;
   }
@@ -300,4 +301,15 @@ display: flex;
   font-size: 26px;
   line-height: 1.5;
   color: #024e76;
+}
+
+/*Media Queries*/
+@media screen and (max-width: 980px) {
+
+}
+@media screen and (max-width: 768px){
+
+}
+@media screen and (max-width: 575px){
+
 }
